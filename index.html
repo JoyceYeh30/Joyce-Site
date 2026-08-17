@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyce Yeh | 營運流程優化與數位轉型專案經理</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-bold text-lg text-slate-900 flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-semibold text-sm">JY</span>
+                <span>Joyce Yeh</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition-colors">身份背景</a>
+                <a href="#contributions" class="hover:text-blue-600 transition-colors">職責貢獻</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">專業技能</a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-blue-600">身份背景</a>
+            <a href="#contributions" class="block py-2 text-slate-600 hover:text-blue-600">職責貢獻</a>
+            <a href="#skills" class="block py-2 text-slate-600 hover:text-blue-600">專業技能</a>
+        </div>
+    </header>
+
+    <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden text-slate-900" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg'); background-size: cover; background-position: center;">
+        <!-- Van Gogh painting background with light semi-transparent overlay for text clarity -->
+        <div class="absolute inset-0 bg-white/90 backdrop-blur-[2px]"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
+                        Joyce Yeh <span class="block text-2xl sm:text-3xl font-light text-blue-600 mt-2">製造業訂單客服主管 &middot; 20年實戰專家</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-700 mb-8 leading-relaxed">
+                        深耕製造業逾 20 年。擅長帶領團隊統籌訂單流程、主導 ERP 系統自動化專案，將作業效率大幅提升，為企業創造卓越營運價值。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contributions" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-xl transition-all shadow-lg shadow-blue-600/30 flex items-center gap-2">
+                            <span>查看具體貢獻</span>
+                            <i class="fa-solid fa-arrow-down text-sm"></i>
+                        </a>
+                        <a href="https://sites.google.com/view/joyceyeh-personalsite" target="_blank" rel="noopener noreferrer" class="px-5 py-3 bg-white/90 hover:bg-white text-slate-700 font-medium rounded-xl transition-all border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-globe text-blue-600"></i>
+                            <span>個人網站</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joyce-yeh-883281240" target="_blank" rel="noopener noreferrer" class="px-5 py-3 bg-white/90 hover:bg-white text-slate-700 font-medium rounded-xl transition-all border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-brands fa-linkedin text-blue-600"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur opacity-30 animate-pulse"></div>
+                        <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white">
+                            <img src="https://img.ai365.fans/cdn-cgi/image/width=1400,quality=90,format=auto/artworks/92ed3536-dfd7-4676-8857-0532bb8854e7/fii6nil3zvj.jpg" alt="Joyce Yeh 大頭照" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/300x300/3b82f6/ffffff?text=Joyce+Yeh'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold text-blue-600 tracking-wider uppercase mb-2">Background</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">身份背景</h3>
+                <p class="text-slate-600 mt-3">橫跨營運端與系統建置的資深橋樑</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 bg-blue-50 border border-blue-100 p-8 rounded-3xl relative">
+                    <div class="absolute -top-4 -left-4 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center shadow-lg">
+                        <i class="fa-solid fa-id-card text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4 pt-2">核心定位</h4>
+                    <p class="text-slate-700 leading-relaxed mb-6">
+                        製造業訂單客服主管，深耕產業超過 20 年。長期帶領訂單客服團隊，負責訂單處理與流程優化，並頻繁參與營運流程及 ERP 系統相關的自動化與操作優化專案。
+                    </p>
+                    <div class="flex items-center gap-3 text-slate-800 font-medium text-sm">
+                        <i class="fa-solid fa-circle-check text-blue-600"></i>
+                        <span>兼具前線營運洞察與後端系統優化思維</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl hover:border-blue-300 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-users-gear text-lg"></i>
+                        </div>
+                        <h5 class="font-bold text-slate-900 mb-2">團隊領導</h5>
+                        <p class="text-sm text-slate-600">長期領導高效訂單客服團隊，協調跨部門對齊作業目標。</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl hover:border-blue-300 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-desktop text-lg"></i>
+                        </div>
+                        <h5 class="font-bold text-slate-900 mb-2">ERP 系統整合</h5>
+                        <p class="text-sm text-slate-600">深入理解製造業供應鏈與訂單邏輯，作為 IT 與業務單位的最強對接窗口。</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl hover:border-blue-300 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-chart-line text-lg"></i>
+                        </div>
+                        <h5 class="font-bold text-slate-900 mb-2">流程自動化</h5>
+                        <p class="text-sm text-slate-600">擅長透過系統自動化與流程重組，將冗長人工步驟轉為高效極速處理。</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl hover:border-blue-300 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-handshake text-lg"></i>
+                        </div>
+                        <h5 class="font-bold text-slate-900 mb-2">跨部門協作</h5>
+                        <p class="text-sm text-slate-600">串接業務、供應鏈、產品與倉儲物流，確保全公司訂單生態系順暢運作。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contributions" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold text-blue-600 tracking-wider uppercase mb-2">Impact & Achievements</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">職責與卓越貢獻</h3>
+                <p class="text-slate-600 mt-3">以數據與實際專案成果說話的具體績效</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Achievement Card 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">效率突破</span>
+                            <i class="fa-solid fa-bolt text-2xl text-emerald-500"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">單筆訂單處理時間極速縮減</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            主導自動化導入專案，全面檢視原有人工填單與檢核瓶頸，重新架構作業邏輯。
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center justify-between">
+                        <div class="text-slate-500 text-xs">處理效率優化</div>
+                        <div class="text-lg font-bold text-emerald-600">5 分鐘 ➔ 10 秒</div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-full">精準度提升</span>
+                            <i class="fa-solid fa-shield-check text-2xl text-blue-500"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">發票作廢數量完美歸零</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            重新調整操作流程順序與檢核點，杜絕人為疏失，顯著提升作業準確度。
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center justify-between">
+                        <div class="text-slate-500 text-xs">每月發票作廢量</div>
+                        <div class="text-lg font-bold text-blue-600">70 張 ➔ 0 張</div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-bold rounded-full">系統優化</span>
+                            <i class="fa-solid fa-gears text-2xl text-indigo-500"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">IT 與營運緊密協作</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            與 IT 部門高度協作優化 ERP 系統功能，精準傳遞第一線實務痛點，使系統設置更貼近實際操作情境。
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                        <div class="text-xs text-slate-600"><i class="fa-solid fa-check text-indigo-600 mr-2"></i>提升系統貼合度與內部用戶滿意度</div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 4 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-bold rounded-full">跨部門串接</span>
+                            <i class="fa-solid fa-network-wired text-2xl text-purple-500"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">全方位供應鏈協調核心</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            長期與業務部、供應鏈、產品部、倉儲物流等部門進行跨部門溝通與協調，確保訂單生命週期順暢串接。
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                        <div class="text-xs text-slate-600"><i class="fa-solid fa-check text-purple-600 mr-2"></i>打通各部門資訊孤島，加速交貨時效</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold text-blue-600 tracking-wider uppercase mb-2">Core Competencies</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">專業技能與優勢</h3>
+                <p class="text-slate-600 mt-3">結合實務管理與數位轉型的關鍵核心能力</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-blue-600/20">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">跨部門溝通協調</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        精準掌握自身及合作部門需求，擅長轉譯業務端與技術端語言，並能主動提供關鍵報表與數據，強力支援高層決策。
+                    </p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-indigo-600/20">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">ERP 系統操作與整合</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        擔任部門 ERP 系統問題主要窗口，具備豐富的系統導入、異常排除與流程對接經驗，與 IT 部門緊密協同解決系統議題。
+                    </p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-emerald-600/20">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">敏捷專案管理精神</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        面對突發狀況或現場需求即時處理、不拖延；具備高度抗壓性與靈活應變能力，確保專案與問題快速落地解決。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <p>&copy; 2026 Joyce Yeh. All Rights Reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="https://sites.google.com/view/joyceyeh-personalsite" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-globe"></i> 個人網站
+                </a>
+                <a href="https://www.linkedin.com/in/joyce-yeh-883281240" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Background Music Player -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-white/95 backdrop-blur-md border border-slate-200 shadow-xl rounded-full px-4 py-2.5 transition-all hover:shadow-2xl">
+        <audio id="bg-music" loop preload="auto">
+            <source src="https://img.ai365.fans/artworks/92ed3536-dfd7-4676-8857-0532bb8854e7/2x6se0gqr1a.mp3" type="audio/mp3">
+        </audio>
+        <button id="music-toggle-btn" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-500 transition-colors focus:outline-none shadow-md cursor-pointer" aria-label="播放背景音樂">
+            <i id="music-icon" class="fa-solid fa-music"></i>
+        </button>
+        <div class="text-xs font-medium text-slate-700 hidden sm:block pr-1">
+            <span id="music-status">背景音樂</span>
+            <span class="block text-[10px] text-slate-400">點擊播放 / 暫停</span>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Background Music Player Logic
+        const music = document.getElementById('bg-music');
+        const musicToggleBtn = document.getElementById('music-toggle-btn');
+        const musicIcon = document.getElementById('music-icon');
+        const musicStatus = document.getElementById('music-status');
+        let isPlaying = false;
+
+        musicToggleBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                music.pause();
+                musicIcon.className = 'fa-solid fa-music';
+                musicStatus.textContent = '背景音樂';
+                musicToggleBtn.classList.remove('bg-emerald-600', 'animate-pulse');
+                musicToggleBtn.classList.add('bg-blue-600');
+                isPlaying = false;
+            } else {
+                music.play().then(() => {
+                    isPlaying = true;
+                    musicIcon.className = 'fa-solid fa-volume-high';
+                    musicStatus.textContent = '播放中...';
+                    musicToggleBtn.classList.remove('bg-blue-600');
+                    musicToggleBtn.classList.add('bg-emerald-600', 'animate-pulse');
+                }).catch(err => {
+                    console.log('Audio playback prevented:', err);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
